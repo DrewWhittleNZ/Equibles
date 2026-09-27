@@ -577,7 +577,7 @@ public class InstitutionalHoldingsTools
         [Description("Maximum number of holdings to return (default: 20, clamped to 1-500)")]
             int maxResults = 20,
         [Description(
-            "Number of ranked holding rows to skip before returning rows — pass the previous call's last row number to page past the maxResults cap. Only page when that call returned maxResults rows; fewer rows means there are no more (default: 0)"
+            "Number of ranked holding rows to skip before returning rows (default: 0). For the next page, add the returned row count to the current offset. Stop when fewer than the effective page size (maxResults clamped to 1-500) are returned, or the response's total has been reached."
         )]
             int offset = 0
     )
