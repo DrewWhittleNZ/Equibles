@@ -38,6 +38,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ### Fixed
 
+- Read a balance-sheet instant from its latest canonical periodic filing, including quarterly recasts of a prior year end, while preserving annual-report priority for full-year flows.
+
 - Keep bounded index ranking for filing searches with issuer or filing-date filters, refill candidates until the requested scope is complete, and preserve the search deadline across scope checks.
 - Recover House disclosure transactions whose asset type and amount continue after a multi-line page header, preserving source row identities during replay.
 
